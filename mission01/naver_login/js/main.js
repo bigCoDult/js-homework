@@ -15,6 +15,8 @@ function emailReg(text) {
 
 function pwReg(text) {
   const re = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{6,16}$/;
+  //여기서 정규표현식이 하는 일 :
+
   return re.test(String(text).toLowerCase());
 }
 
