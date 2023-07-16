@@ -2,9 +2,17 @@ mission-1
   일치하는 아이디와 비밀번호를 입력했을 경우 
   welcome 페이지로 이동하는 코드 로직을 작성
 
+
+function 입력있으면 트랙킹
+function 트랙킹된 텍스트가 유의미한 양식인지 판단
+function 판단에 따른 클래스 부여
+function 클래스를 판단
+function 클래스
+
   해야할 일
     
-    1 입력된 텍스트를 트래킹
+    1 입력 이벤트에 함수 실행
+      입력을 감지?
       정규식을 벨리데이션 하고
         클래스를 동적으로 부여/삭제
     
@@ -38,7 +46,14 @@ mission-1
     
     벨리데이션
       node.classList.add('is--invalid')
+        node.
+          DOM 요소를 참조함
+        classList.
+          클래스 목록을 반환
+        add('is--invalid')
+          클래스를 부여
       node.classList.remove('is--invalid')
+      
       value === user.id
       value === user.pw
 
