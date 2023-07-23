@@ -18,7 +18,6 @@ mission02 과제 요구사항
   배경색 변경
 
   비주얼이 변경되면 상단의 이름을 연동해서 변경
-
 ```
 
 
@@ -88,6 +87,7 @@ target의 src값을 poster1의 src에 할당시킴으로서,
 function setNameImage(target) {
   poster1.src = target.src;
 }
+```
 
 setBgColor
 ```
@@ -97,6 +97,7 @@ data.js의 data배열에 접근하여 colorA, colorB에 값을 할당함
 backGround1.style.background = `linear-gradient(to bottom, ${colorA},${colorB})`; 를 사용하여, 
 body의 background 색상을 변경함
 ```
+```js
 function setBgColor(target) {
   let chosenCharacter = 0;
   let switcherCharacter = `${target.alt}`;
