@@ -3,7 +3,6 @@ import { data } from "./data.js";
 
 let title1 = getNode(".nickName");
 const poster1 = getNode(".visual img");
-
 const nav1 = getNode(".nav");
 
 function setNameText(target) {
@@ -13,9 +12,11 @@ function setNameText(target) {
 
   title1.textContent = name1;
 }
+
 function setNameImage(target) {
   poster1.src = target.src;
 }
+
 function setBgColor(target) {
   let chosenCharacter = 0;
   let switcherCharacter = `${target.alt}`;
@@ -40,6 +41,7 @@ function setBgColor(target) {
   let colorB = data[chosenCharacter].color[1];
   backGround1.style.background = `linear-gradient(to bottom, ${colorA},${colorB})`;
 }
+
 function changeCharacterTheme(e) {
   let target = e.target;
 
